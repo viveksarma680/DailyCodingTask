@@ -1,0 +1,59 @@
+import java.util.Scanner;
+public class RightTrianglePattern
+{
+  public static void main(String[] args)
+  {
+    System.out.print("Enter number : ");
+    Scanner obj=new Scanner(System.in);
+    int n=obj.nextInt();
+
+    for(int i=1;i<=n;i++)
+    {
+      for(int j=1;j<=i;j++)
+      {
+        System.out.print("* ");
+      }
+      System.out.println();
+    }
+  }
+}
+_______
+import java.util.Scanner;
+public class RightTrianglePattern {
+    public static void main(String[] args) {
+        System.out.print("Enter number: ");
+        Scanner obj = new Scanner(System.in);
+        int n = obj.nextInt();
+
+        String pattern = "";
+        for (int i = 1; i <= n; i++) {
+            pattern += "* "; // Append an asterisk for each row
+            System.out.println(pattern); // Print the updated pattern
+        }
+    }
+}
+
+
+How It Works:
+String Variable:
+
+pattern is initialized as an empty string. This variable builds the pattern row by row.
+Single Loop:
+
+The loop runs from 1 to n.
+For each iteration:
+pattern += "* "; adds one asterisk (*) to the current pattern.
+System.out.println(pattern); prints the current state of the pattern.
+Efficiency:
+
+This approach avoids a nested loop by keeping the pattern building logic in a single loop.
+Example Output:
+For an input of 5, the output is:
+
+Enter number: 5
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+
