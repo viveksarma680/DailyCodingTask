@@ -9,3 +9,27 @@ public class square {
     }
   }
 }
+
+public class Square {
+    public static void main(String[] args) {
+        int n = 5;
+        String row = "* ".repeat(n); // Create one row with n asterisks
+        for (int i = 0; i < n; i++) {
+            System.out.println(row); // Print the same row n times
+        }
+    }
+}
+
+String .repeat():
+
+The String.repeat(int count) method (introduced in Java 11) creates a string by repeating the * pattern n times.
+This results in a single string, row, that represents one complete row of the square.
+Single Loop:
+
+The for loop runs n times, and in each iteration, it prints the row.
+output:
+* * * * * 
+* * * * * 
+* * * * * 
+* * * * * 
+* * * * * 
