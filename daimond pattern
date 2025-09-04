@@ -1,0 +1,34 @@
+4-seps-25 
+
+public class Main {
+    public static void main(String[] args) {
+        int N = 5;
+        for (int i = 1; i <= N; i++) { 
+            // Print '#' before stars
+            for (int j = 0; j < N - i; j++) {
+                System.out.print("#");
+            }
+
+            // Print stars
+            for (int j = 0; j < 2 * i - 1; j++) {
+                System.out.print("*");
+            }
+
+            // Print '#' after stars
+            for (int j = 0; j < N - i; j++) {
+                System.out.print("#");
+            }
+
+            // Move to the next row
+            System.out.println();
+        }
+    }
+}
+
+output :
+
+####*####
+###***###
+##*****##
+#*******#
+*********
